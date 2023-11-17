@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-17T18:29:37 IST" name="Default suite" finished-at="2023-11-17T18:30:49 IST" duration-ms="71850">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-11-17T18:29:37 IST" name="Default test" finished-at="2023-11-17T18:30:49 IST" duration-ms="71850">
+      <class name="com.testRunnersTestNG.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-17T18:29:37 IST" name="setUpClass" finished-at="2023-11-17T18:29:39 IST" duration-ms="2002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-17T18:29:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-17T18:30:45 IST" duration-ms="65378" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate first name user field in the profile edit or update page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validate profile update page in customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at stepDefinitions.customer.profile.F0003_Profile_edit_page.verify_that_user_should_get_the_respected_message_below_the_name_user_field_or_pop_up_in_profile_update_page(F0003_Profile_edit_page.java:407)
+at ✽.Verify that user should get the respected message below the name user field or pop up in profile update page(file:///C:/Users/Kishor/Desktop/Appium_project/appium_shield/src/test/resources/features/customer/F_Profile_pages/F0003_profile_edit_page.feature:59)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-17T18:30:45 IST" name="tearDownClass" finished-at="2023-11-17T18:30:49 IST" duration-ms="4394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.testRunnersTestNG.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
